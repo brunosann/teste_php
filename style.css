@@ -44,3 +44,12 @@ a {
   background-color: rgb(55, 48, 163, 0.8);
   transition: 0.1s ease-in-out;
 }
+
+/* ATALHOS */
+.text-center {
+  text-align: center;
+}
+
+.text-error {
+  color: rgb(240, 76, 47);
+}
