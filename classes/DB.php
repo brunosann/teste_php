@@ -26,4 +26,22 @@ class DB
     $user = $sql->fetch(PDO::FETCH_OBJ);
     return $user;
   }
+
+  public function paginate(int $page)
+  {
+    $perPage = 5;
+    $currentPage = ($perPage * $page) - $perPage;
+
+    $rows = $this->conn
+      ->query("SELECT COUNT(*) AS total FROM $this->table")
+      ->fetch(PDO::FETCH_OBJ)->total;
+
+    $pages = ceil($rows / $perPage);
+
+    $users = $this->conn
+      ->query("SELECT * FROM $this->table LIMIT $perPage OFFSET $currentPage")
+      ->fetchAll(PDO::FETCH_OBJ);
+
+    return ['rows' => $rows, 'pages' => $pages, 'users' => $users];
+  }
 }

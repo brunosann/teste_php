@@ -20,6 +20,11 @@ a {
   text-decoration: none;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 .container {
   max-width: 900px;
   width: 100%;
@@ -43,6 +48,38 @@ a {
 .link:hover {
   background-color: rgb(55, 48, 163, 0.8);
   transition: 0.1s ease-in-out;
+}
+
+.list-users {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list-item {
+  color: #fff;
+  background-color: rgb(55, 48, 163);
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 0.35rem;
+}
+
+.link-pages {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.link-pages > .link-item a {
+  background-color: rgb(55, 48, 163);
+  padding: 5px 10px;
+  border-radius: 0.35rem;
+  transition: 0.2s ease-in-out;
+}
+
+.link-pages > .link-item a:hover {
+  background-color: rgb(55, 48, 163, 0.8);
 }
 
 /* ATALHOS */
