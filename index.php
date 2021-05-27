@@ -6,5 +6,8 @@
   <a href="date_url.php" class="link">
     2 - Algoritmo em PHP que receba uma data através de um parâmetro da url
   </a>
+  <a href="user_id.php" class="link">
+    3 - Consulta na tabela "usuarios" filtrando pela coluna "id
+  </a>
 </section>
 <?php include('./layout/footer.php') ?>
