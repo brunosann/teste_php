@@ -1,5 +1,4 @@
 <?php
-
 require_once('./classes/DB.php');
 $userDB = new DB('usuarios');
 

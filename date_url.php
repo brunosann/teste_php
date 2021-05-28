@@ -1,6 +1,6 @@
 <?php
 $urlDate = filter_input(INPUT_GET, 'date');
-$verifDate = preg_match('/^(0[1-9]|[12][0-9]|3[01])[- \/.](0[1-9]|1[012])[- \/.](18|19|20)\d\d$/', $urlDate);
+$verifDate = preg_match('/^(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[012])[\/](18|19|20)\d\d$/', $urlDate);
 
 function datePattern($date)
 {

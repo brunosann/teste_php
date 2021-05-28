@@ -12,7 +12,7 @@
 <body>
   <nav>
     <a href="index.php">
-      <h1>Teste PHP</h1>
+      <h1>Home Teste PHP</h1>
     </a>
   </nav>
 
